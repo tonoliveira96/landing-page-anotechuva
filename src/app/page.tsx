@@ -1,7 +1,9 @@
+"use client"
 import { Card } from '@/components/Card';
 import { RainCloud } from '@/components/RainCloud';
 import Link from 'next/link';
 
+import { sendGAEvent } from '@next/third-parties/google';
 import Image1 from "../assets/banner01.png";
 import Image2 from "../assets/banner02.png";
 import Image3 from "../assets/banner03.png";
@@ -14,7 +16,8 @@ export default function Home() {
           <h1 className='font-bold text-3xl'>AnoteChuva</h1>
           <Link
             href="https://app.anotechuva.com"
-            id='login'
+            id="login"
+            onClick={() => { sendGAEvent('event', 'click_access'); }}
             className="
             text-white 
             bg-blue-700 
