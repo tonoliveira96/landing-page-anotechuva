@@ -3,6 +3,7 @@ import { Card } from '@/components/Card';
 import { RainCloud } from '@/components/RainCloud';
 import Link from 'next/link';
 
+import { Footer } from '@/components/Footer';
 import { sendGAEvent } from '@next/third-parties/google';
 import Image1 from "../assets/banner01.png";
 import Image2 from "../assets/banner02.png";
@@ -76,15 +77,14 @@ export default function Home() {
           imageDescription='Ilustração de um homem colocando arquivos em uma nuvem'
         />
       </section>
-      <div className='border-t-2 border-slate-900 flex flex-col justify-center items-center gap-1 p-4'>
-        <strong>{`Copyright © ${new Date().getFullYear()} AnoteChuva`}</strong>
+      <Footer>
         <div>
           <Link className='font-medium' href="/privacy">
             Políticas de privacidade
           </Link>
         </div>
         <a href="https://storyset.com/online" className='text-sm' target='_blank'>Online illustrations by Storyset</a>
-      </div>
+      </Footer>
     </div>
   );
 }
