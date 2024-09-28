@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Card } from '@/components/Card';
 import { RainCloud } from '@/components/RainCloud';
 import Link from 'next/link';
@@ -39,12 +39,12 @@ export default function Home() {
 
       <section className='relative overflow-hidden h-[70vh] flex flex-col items-center justify-center p-8 gap-2'>
         <div className='abosolute max-w-screen-md text-center'>
-          <h2 className='text-5xl font-bold'>
+          <h2 className='text-4xl font-bold md:text-5xl'>
             Aplicação gratuita para registro diário de chuvas
           </h2>
-          <p>
+          <p className='text-slate-200'>
             Usando um pluviômetro o usuário diariamente realiza as medições
-            e cadastrar as informações alimentando assim uma base de dados
+            e cadastrar as informações alimentando uma base de dados
             unificada.
           </p>
         </div>
@@ -65,22 +65,21 @@ export default function Home() {
         />
         <Card
           title='Gráficos'
-          description='Tenha acesso a gráficos com indicadores das chuvas que você
-            cadastrou.'
+          description='Acompanhe gráficos com indicadores das chuvas que você cadastrou. Visualize as chuvas registradas por dia, mês ou ano'
           imagePath={Image2}
           imageDescription='Duas pessoas apresentando um relatório gráfico'
         />
         <Card
           title='Importação'
-          description='Faça importação em massa de dados usando uma planilha.'
+          description='Realize a importação em massa para cadastrar ou atualizar registros de chuvas, utilizando uma planilha.'
           imagePath={Image3}
           imageDescription='Ilustração de um homem colocando arquivos em uma nuvem'
         />
       </section>
       <div className='border-t-2 border-slate-900 flex flex-col justify-center items-center gap-1 p-4'>
-        {`Copyright © ${new Date().getFullYear()} AnoteChuva`}
+        <strong>{`Copyright © ${new Date().getFullYear()} AnoteChuva`}</strong>
         <div>
-          <Link href="/privacy">
+          <Link className='font-medium' href="/privacy">
             Políticas de privacidade
           </Link>
         </div>
