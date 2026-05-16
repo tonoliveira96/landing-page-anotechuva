@@ -1,5 +1,8 @@
-﻿export const RainCloud = ({ animationClass = "" }: { animationClass?: string; }) => {
-  const drops = ["", "", "", "", "", "", "", "", "", "", ""];
+﻿const DROP_DELAYS = ["", "", "", "", "", "", "", "", "", "", ""].map(
+  (_, i) => i * (Math.random() * 0.2)
+);
+
+export const RainCloud = ({ animationClass = "" }: { animationClass?: string; }) => {
   
   return (
     <div
@@ -25,7 +28,7 @@
         ">
       </div>
       <div className="flex justify-center gap-2 mt-[-1rem]">
-        {drops.map((drop, index) => (
+        {DROP_DELAYS.map((delay, index) => (
           <span
             key={index.toString()}
             className="
@@ -37,7 +40,7 @@
             border-b-blue-600
             animate-rainfall
           "
-            style={{ animationDelay: `${index * Math.random() * 0.2}s` }}
+            style={{ animationDelay: `${delay}s` }}
           >
           </span>
         ))}
