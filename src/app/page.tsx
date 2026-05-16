@@ -59,7 +59,7 @@ export default function Home() {
       <section className='flex flex-wrap gap-4 justify-center py-4 px-8'>
         <Card
           title='Conectividade'
-          description='Acesse seu dados de chuvas de qualquer lugar e a qualquer momento, no
+          description='Acesse seus dados de chuvas de qualquer lugar e a qualquer momento, no
             celular, tablet ou computador. Basta ter acesso a internet.'
           imagePath={Image1}
           imageDescription='Desenho de um homem com dispositivos eletrônicos'

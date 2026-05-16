@@ -10,7 +10,7 @@ const Privacy = () => {
   return (
     <>
       <div className='max-w-2xl m-auto p-8'>
-        <h2 className='text-lg font-bold mb-2'>AnoteChuva®️ - Política Privacidade</h2>
+        <h2 className='text-lg font-bold mb-2'>AnoteChuva®️ - Política de Privacidade</h2>
         <div className='text-justify space-y-2'>
           <p>
             A sua privacidade é importante para nós. É política do Aplicativo
@@ -57,7 +57,7 @@ const Privacy = () => {
             O cliente nos fornece as respectivas informações quando:
             <ul>
               <li>Acesso a localização exata ou aproximada.</li>
-              <li>Acesso a galeria com concetimento do usuário.</li>
+              <li>Acesso a galeria com consentimento do usuário.</li>
             </ul>
           </p>
           <h3 className='text-md font-bold my-2'>Como utilizamos os Dados do Cliente</h3>
@@ -65,7 +65,7 @@ const Privacy = () => {
             Podemos usar os respectivos Dados Pessoais para:
             <ul>
               <li>Ter acesso a localização no mapa exibido no dispositivo.</li>
-              <li>Para que o usário possa atualizar a imagem de perfil.</li>
+              <li>Para que o usuário possa atualizar a imagem de perfil.</li>
             </ul>
           </p>
           <h3 className='text-md font-bold my-2'>Compromisso do Usuário</h3>{' '}
@@ -78,11 +78,11 @@ const Privacy = () => {
             {' '}
             <li>
               A- Não se envolver em atividades que sejam ilegais ou contrárias à
-              boa fé a à ordem pública;
+              boa fé e à ordem pública;
             </li>{' '}
             <li>
               B- Não difundir propaganda ou conteúdo de natureza racista,
-              xenofóbica, ou azar, qualquer tipo de pornografia ilegal, de
+              xenofóbica, ou de azar, qualquer tipo de pornografia ilegal, de
               apologia ao terrorismo ou contra os direitos humanos;
             </li>{' '}
             <li>
@@ -94,7 +94,7 @@ const Privacy = () => {
             </li>{' '}
           </ul>{' '}
           <p>
-            Está política é efetiva a partir de <strong>Julho</strong>/
+            Esta política é efetiva a partir de <strong>Julho</strong>/
             <strong>2022</strong>.
           </p>
         </div>
