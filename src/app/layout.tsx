@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "AnoteChuva",
   description: "Aplicação gratuita para registro pessoal diário de chuvas.",
-  keywords: ["Anotechuva", "histórico de chuvas online", "Aplicativo de monitoramento de chuvas", "resgitrar chuvas"],
+  keywords: ["Anotechuva", "histórico de chuvas online", "Aplicativo de monitoramento de chuvas", "registrar chuvas"],
   icons: {
     icon: "/favicon.png",
     shortcut: "/favicon.png",

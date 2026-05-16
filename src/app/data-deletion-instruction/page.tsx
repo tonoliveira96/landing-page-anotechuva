@@ -18,7 +18,7 @@ const DataDeletionInstruction = () => {
             De acordo com a política do Facebook, devemos fornecer o URL do lembrete de exclusão de dados do usuário ou o URL da instrução de exclusão de dados.
           </p>
           <p>
-            Se deseja apagar as suas actividades para a aplicação AnoteChuva®️, pode apagar as suas informações seguindo estes passos:
+            Se deseja apagar as suas atividades para a aplicação AnoteChuva®️, pode apagar as suas informações seguindo estes passos:
           </p>{' '}
           <p className='pl-8'>
             <ol className="list-decimal">
