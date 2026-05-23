@@ -1,104 +1,131 @@
 ﻿import { Footer } from '@/components/Footer';
+import { Navbar } from '@/components/Navbar';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "AnoteChuva®️ - Políticas de Privacidade",
-  description: "A sua privacidade é importante para nós. Entenda como tratamos seus dados.",
+  title: 'AnoteChuva - Política de Privacidade',
+  description: 'Saiba como o AnoteChuva coleta, utiliza, protege e trata dados pessoais em conformidade com a LGPD.',
 };
 
 const Privacy = () => {
   return (
     <>
-      <div className='max-w-2xl m-auto p-8'>
-        <h2 className='text-lg font-bold mb-2'>AnoteChuva®️ - Política de Privacidade</h2>
-        <div className='text-justify space-y-2'>
-          <p>
-            A sua privacidade é importante para nós. É política do Aplicativo
-            AnoteChuva®️ respeitar a sua privacidade em relação a qualquer
-            informação sua que possamos coletar no site AnoteChuva®️, e outros
-            sites que possuímos e operamos.
-          </p>
-          <p>
-            Solicitamos informações pessoais apenas quando realmente precisamos
-            delas para lhe fornecer um serviço. Fazemo-lo por meios justos e
-            legais, com o seu conhecimento e consentimento. Também informamos por
-            que estamos coletando e como será usado.{' '}
-          </p>{' '}
-          <p>
-            Apenas retemos as informações coletadas pelo tempo necessário para
-            fornecer o serviço solicitado. Quando armazenamos dados, protegemos
-            dentro de meios comercialmente aceitáveis ​​para evitar perdas e
-            roubos, bem como acesso, divulgação, cópia, uso ou modificação não
-            autorizados.
-          </p>{' '}
-          <p>
-            Não compartilhamos informações de identificação pessoal publicamente
-            ou com terceiros, exceto quando exigido por lei.
-          </p>{' '}
-          <p>
-            O nosso site pode ter links para sites externos que não são operados
-            por nós. Esteja ciente de que não temos controle sobre o conteúdo e
-            práticas desses sites e não podemos aceitar responsabilidade por suas
-            respectivas políticas de privacidade .
-          </p>
-          <p>
-            Você é livre para recusar a nossa solicitação de informações pessoais,
-            entendendo que talvez não possamos fornecer alguns dos serviços
-            desejados.
-          </p>{' '}
-          <p>
-            O uso continuado de nosso site será considerado como aceitação de
-            nossas práticas em torno de Aviso de Privacidade e informações
-            pessoais. Se você tiver alguma dúvida sobre como lidamos com dados do
-            usuário e informações pessoais, entre em contacto connosco.
-          </p>
-          <h3 className='text-md font-bold my-2'>Como coletamos os Dados</h3>
-          <p>
-            O cliente nos fornece as respectivas informações quando:
-            <ul>
-              <li>Acesso a localização exata ou aproximada.</li>
-              <li>Acesso a galeria com consentimento do usuário.</li>
+      <Navbar />
+      <main className='mx-auto max-w-3xl px-gutter pb-16 pt-28'>
+        <h1 className='mb-3 text-3xl font-bold text-primary'>Política de Privacidade</h1>
+        <p className='mb-8 text-on-surface-variant'>
+          Esta política descreve como o AnoteChuva trata dados pessoais no site e na aplicação. Ao usar nossos serviços,
+          você concorda com as práticas descritas abaixo.
+        </p>
+
+        <article className='space-y-8 text-on-surface-variant'>
+          <section>
+            <h2 className='mb-2 text-xl font-semibold text-on-surface'>1. Dados que coletamos</h2>
+            <p className='mb-2'>Podemos coletar dados informados diretamente por você e dados técnicos de uso da plataforma.</p>
+            <ul className='list-disc space-y-1 pl-6'>
+              <li>Dados de cadastro, quando aplicável (ex.: nome, e-mail e telefone).</li>
+              <li>Dados de uso do sistema para registrar e visualizar medições de chuva.</li>
+              <li>Dados de dispositivo e navegação para segurança, desempenho e melhoria contínua.</li>
+              <li>Localização aproximada ou precisa e acesso à galeria, somente quando você autoriza no dispositivo.</li>
             </ul>
-          </p>
-          <h3 className='text-md font-bold my-2'>Como utilizamos os Dados do Cliente</h3>
-          <p>
-            Podemos usar os respectivos Dados Pessoais para:
-            <ul>
-              <li>Ter acesso a localização no mapa exibido no dispositivo.</li>
-              <li>Para que o usuário possa atualizar a imagem de perfil.</li>
+          </section>
+
+          <section>
+            <h2 className='mb-2 text-xl font-semibold text-on-surface'>2. Como usamos os dados</h2>
+            <p className='mb-2'>Os dados são utilizados para fornecer e melhorar os serviços do AnoteChuva.</p>
+            <ul className='list-disc space-y-1 pl-6'>
+              <li>Permitir cadastro, autenticação e uso das funcionalidades da plataforma.</li>
+              <li>Exibir registros, gráficos e histórico de precipitação.</li>
+              <li>Viabilizar recursos opcionais, como localização no mapa e atualização de imagem de perfil.</li>
+              <li>Prevenir fraudes, corrigir falhas e manter a segurança do ambiente.</li>
+              <li>Gerar métricas agregadas de uso para evolução do produto.</li>
             </ul>
-          </p>
-          <h3 className='text-md font-bold my-2'>Compromisso do Usuário</h3>{' '}
-          <p>
-            O usuário se compromete a fazer uso adequado dos conteúdos e da
-            informação que o AnoteChuva®️ oferece no site e com caráter
-            enunciativo, mas não limitativo:
-          </p>{' '}
-          <ul>
-            {' '}
-            <li>
-              A- Não se envolver em atividades que sejam ilegais ou contrárias à
-              boa fé e à ordem pública;
-            </li>{' '}
-            <li>
-              B- Não difundir propaganda ou conteúdo de natureza racista,
-              xenofóbica, ou de azar, qualquer tipo de pornografia ilegal, de
-              apologia ao terrorismo ou contra os direitos humanos;
-            </li>{' '}
-            <li>
-              C- Não causar danos aos sistemas físicos (hardwares) e lógicos
-              (softwares) do AnoteChuva®️, de seus fornecedores ou terceiros,
-              para introduzir ou disseminar vírus informáticos ou quaisquer outros
-              sistemas de hardware ou software que sejam capazes de causar danos
-              anteriormente mencionados.
-            </li>{' '}
-          </ul>{' '}
-          <p>
-            Esta política é efetiva a partir de <strong>Julho</strong>/
-            <strong>2022</strong>.
-          </p>
-        </div>
-      </div>
+          </section>
+
+          <section>
+            <h2 className='mb-2 text-xl font-semibold text-on-surface'>3. Base legal (LGPD)</h2>
+            <p>
+              O tratamento de dados é realizado com fundamento nas bases legais aplicáveis da Lei Geral de Proteção de Dados
+              (Lei n. 13.709/2018), incluindo execução de contrato, cumprimento de obrigação legal, legítimo interesse e
+              consentimento, quando necessário.
+            </p>
+          </section>
+
+          <section>
+            <h2 className='mb-2 text-xl font-semibold text-on-surface'>4. Compartilhamento de dados</h2>
+            <p className='mb-2'>Não comercializamos dados pessoais. O compartilhamento pode ocorrer apenas quando necessário:</p>
+            <ul className='list-disc space-y-1 pl-6'>
+              <li>Com fornecedores que operam infraestrutura e serviços essenciais ao funcionamento da plataforma.</li>
+              <li>Para cumprimento de obrigação legal, regulatória ou ordem de autoridade competente.</li>
+              <li>Para proteção de direitos do AnoteChuva, usuários e terceiros, nos limites da lei.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className='mb-2 text-xl font-semibold text-on-surface'>5. Retenção e descarte</h2>
+            <p>
+              Mantemos os dados apenas pelo tempo necessário para cumprir as finalidades desta política, obrigações legais e
+              auditorias aplicáveis. Após esse período, os dados são eliminados ou anonimizados de forma segura.
+            </p>
+          </section>
+
+          <section>
+            <h2 className='mb-2 text-xl font-semibold text-on-surface'>6. Segurança da informação</h2>
+            <p>
+              Adotamos medidas técnicas e administrativas para proteger os dados contra acesso não autorizado, perda,
+              alteração, divulgação ou destruição indevida. Nenhum método é totalmente infalível, mas buscamos padrões
+              compatíveis com boas práticas do setor.
+            </p>
+          </section>
+
+          <section>
+            <h2 className='mb-2 text-xl font-semibold text-on-surface'>7. Direitos do titular</h2>
+            <p className='mb-2'>Nos termos da LGPD, você pode solicitar, quando aplicável:</p>
+            <ul className='list-disc space-y-1 pl-6'>
+              <li>Confirmação da existência de tratamento e acesso aos dados.</li>
+              <li>Correção de dados incompletos, inexatos ou desatualizados.</li>
+              <li>Anonimização, bloqueio ou eliminação de dados desnecessários.</li>
+              <li>Portabilidade, revogação do consentimento e informações sobre compartilhamento.</li>
+            </ul>
+            <p className='mt-2'>
+              Para exercer seus direitos, utilize os canais oficiais de atendimento informados no aplicativo ou no site.
+            </p>
+          </section>
+
+          <section>
+            <h2 className='mb-2 text-xl font-semibold text-on-surface'>8. Links externos</h2>
+            <p>
+              Nosso site pode conter links para páginas de terceiros. Não somos responsáveis por conteúdo, políticas e práticas
+              de privacidade desses ambientes externos.
+            </p>
+          </section>
+
+          <section>
+            <h2 className='mb-2 text-xl font-semibold text-on-surface'>9. Compromisso de uso adequado</h2>
+            <p className='mb-2'>Ao utilizar a plataforma, o usuário se compromete a:</p>
+            <ul className='list-disc space-y-1 pl-6'>
+              <li>Não realizar atividades ilícitas ou contrárias à boa-fé e à ordem pública.</li>
+              <li>Não disseminar conteúdo discriminatório, fraudulento, violento, ilegal ou que viole direitos de terceiros.</li>
+              <li>Não tentar comprometer a segurança dos sistemas por meio de ataques, engenharia reversa ou malware.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className='mb-2 text-xl font-semibold text-on-surface'>10. Atualizações desta política</h2>
+            <p>
+              Esta política pode ser revisada periodicamente para refletir mudanças legais, técnicas ou operacionais. A versão
+              mais recente estará sempre disponível nesta página.
+            </p>
+          </section>
+
+          <section>
+            <h2 className='mb-2 text-xl font-semibold text-on-surface'>11. Vigência</h2>
+            <p>
+              Esta versão entra em vigor em <strong>23 de maio de 2026</strong>.
+            </p>
+          </section>
+        </article>
+      </main>
       <Footer />
     </>
   );
