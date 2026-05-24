@@ -33,7 +33,7 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      <div className="w-full max-w-[500px] flex-1">
+      <div className="w-full max-w-[400px] flex-1">
         <div className="group relative">
           <div className="absolute -inset-4 rounded-full bg-primary/20 blur-3xl transition-all group-hover:bg-primary/30" />
           <Image

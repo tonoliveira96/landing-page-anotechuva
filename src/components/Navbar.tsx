@@ -7,7 +7,7 @@ import { HiBars3, HiXMark } from "react-icons/hi2";
 
 const NAV_LINKS = [
   { href: "#", label: "Início" },
-  { href: "#features", label: "Recursos" },
+  { href: "#how-it-works", label: "Como funciona" },
   { href: "#plans", label: "Planos" },
   { href: "#support", label: "Suporte" },
 ];

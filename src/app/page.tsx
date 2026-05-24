@@ -5,7 +5,6 @@ import { HeroSection } from "@/components/HeroSection";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Navbar } from "@/components/Navbar";
 import { RainBackground } from "@/components/RainBackground";
-import { SecuritySection } from "@/components/SecuritySection";
 
 export default function Home() {
   return (
@@ -17,7 +16,6 @@ export default function Home() {
         <HeroSection />
         <FriendlyTip />
         <HowItWorks />
-        <SecuritySection />
         <FinalCTA />
       </main>
 

@@ -30,8 +30,6 @@ export const Footer = () => {
           ))}
         </div>
       </div>
-
-      <div className="mt-8 text-center text-xs opacity-40">Online illustrations by Storyset</div>
     </footer>
   );
 };
