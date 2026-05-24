@@ -1,4 +1,3 @@
-import { FeaturesSection } from "@/components/FeaturesSection";
 import { FinalCTA } from "@/components/FinalCTA";
 import { Footer } from "@/components/Footer";
 import { FriendlyTip } from "@/components/FriendlyTip";
@@ -16,7 +15,6 @@ export default function Home() {
 
       <main className="relative z-10 pt-24">
         <HeroSection />
-        <FeaturesSection />
         <FriendlyTip />
         <HowItWorks />
         <SecuritySection />

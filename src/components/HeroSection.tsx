@@ -8,11 +8,12 @@ export const HeroSection = () => {
     <section className="mx-auto flex max-w-container-max-width flex-col items-center gap-12 px-gutter py-section-padding-mobile md:flex-row md:py-section-padding-desktop">
       <div className="flex-1 text-center md:text-left">
         <h1 className="mb-6 font-display-lg-mobile text-display-lg-mobile leading-tight md:font-display-lg md:text-display-lg">
-          Registre suas chuvas de forma <span className="text-primary">simples e gratuita</span>
+          Monitore a chuva na sua região de forma simples
         </h1>
 
         <p className="mx-auto mb-10 max-w-xl font-body-lg text-body-lg text-on-surface-variant md:mx-0">
-          Acompanhe as medições do seu pluviômetro de qualquer lugar, direto no seu celular ou computador.
+          Uma ferramenta pensada para todos que querem cuidar da nossa
+          comunidade registrando o clima local com facilidade.
         </p>
 
         <div className="flex flex-col justify-center gap-4 sm:flex-row md:justify-start">
