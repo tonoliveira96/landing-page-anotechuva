@@ -3,7 +3,7 @@ import { Navbar } from '@/components/Navbar';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'AnoteChuva - Política de Privacidade',
+  title: 'Política de Privacidade',
   description: 'Saiba como o AnoteChuva coleta, utiliza, protege e trata dados pessoais em conformidade com a LGPD.',
 };
 

@@ -6,10 +6,8 @@ import { useState } from "react";
 import { HiBars3, HiXMark } from "react-icons/hi2";
 
 const NAV_LINKS = [
-  { href: "#", label: "Início" },
+  { href: "/", label: "Início" },
   { href: "#how-it-works", label: "Como funciona" },
-  { href: "#plans", label: "Planos" },
-  { href: "#support", label: "Suporte" },
 ];
 
 export const Navbar = () => {
@@ -37,6 +35,8 @@ export const Navbar = () => {
         <div className="hidden md:block">
           <Link
             href="https://app.anotechuva.com"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => sendGAEvent("event", "click_access")}
             className="rounded-lg bg-primary-container px-6 py-2 font-label-caps text-label-caps text-on-primary-container transition-opacity hover:opacity-80"
           >
@@ -92,6 +92,8 @@ export const Navbar = () => {
 
         <Link
           href="https://app.anotechuva.com"
+          target="_blank"
+          rel="noopener noreferrer"
           onClick={() => {
             sendGAEvent("event", "click_access");
             setIsOpen(false);

@@ -3,7 +3,8 @@ import { Navbar } from '@/components/Navbar';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "AnoteChuva®️ - Instrução de exclusão de dados",
+  title: "Instrução de exclusão de dados",
+  description: "Saiba como solicitar a exclusão dos seus dados vinculados ao AnoteChuva no Facebook.",
 };
 
 const DataDeletionInstruction = () => {

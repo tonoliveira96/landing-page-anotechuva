@@ -1,10 +1,7 @@
 ﻿import Link from "next/link";
 
 const FOOTER_LINKS = [
-  { href: "#", label: "Termos de Uso" },
   { href: "/privacy", label: "Privacidade" },
-  { href: "#", label: "Contato" },
-  { href: "#", label: "Sobre Nós" },
 ];
 
 export const Footer = () => {

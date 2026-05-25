@@ -19,13 +19,15 @@ export const HeroSection = () => {
         <div className="flex flex-col justify-center gap-4 sm:flex-row md:justify-start">
           <Link
             href="https://app.anotechuva.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-xl bg-primary-container px-10 py-4 font-headline-md text-headline-md text-on-primary-container shadow-[0px_4px_20px_rgba(56,189,248,0.3)] transition-transform hover:scale-105"
           >
             Começar agora
           </Link>
 
           <a
-            href="#features"
+            href="#how-it-works"
             className="rounded-xl border border-primary px-10 py-4 font-headline-md text-headline-md text-primary transition-colors hover:bg-primary/10"
           >
             Saber mais
