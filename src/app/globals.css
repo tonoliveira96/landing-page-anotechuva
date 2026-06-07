@@ -3,23 +3,37 @@
 @tailwind utilities;
 
 :root {
-  --background :#18172a;
-  --foreground: #ededed;
-  --primary: #0049b7
+  --background: #101415;
+  --foreground: #e0e3e5;
+  --primary: #8ed5ff;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #18172a;
-    --foreground: #ededed;
-    --primary: #0049b7
-  }
-} */
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: var(--font-hanken-grotesk), sans-serif;
+  overflow-x: hidden;
+}
+
+.glass-card {
+  background: rgba(30, 41, 59, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(51, 65, 85, 0.5);
+}
+
+.rain-drop {
+  position: absolute;
+  background: #38bdf8;
+  width: 2px;
+  height: 10px;
+  opacity: 0.3;
+  animation: rain-fall linear infinite;
+}
+
+@keyframes rain-fall {
+  to {
+    transform: translateY(100vh);
+  }
 }
 
 @layer utilities {
