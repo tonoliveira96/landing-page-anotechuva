@@ -1,6 +1,7 @@
 ﻿import Link from "next/link";
 
 const FOOTER_LINKS = [
+  { href: "/#plans", label: "Planos" },
   { href: "/privacy", label: "Privacidade" },
   { href: "/data-deletion-instruction", label: "Excluir meus dados" },
 ];
