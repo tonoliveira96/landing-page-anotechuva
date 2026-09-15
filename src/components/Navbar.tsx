@@ -6,7 +6,6 @@ import { useState } from "react";
 import { HiBars3, HiXMark } from "react-icons/hi2";
 
 const NAV_LINKS = [
-  { href: "/", label: "Início" },
   { href: "#how-it-works", label: "Como funciona" },
 ];
 
@@ -34,13 +33,13 @@ export const Navbar = () => {
 
         <div className="hidden md:block">
           <Link
-            href="https://app.anotechuva.com"
+            href="https://app.anotechuva.com/login"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => sendGAEvent("event", "click_access")}
+            onClick={() => sendGAEvent("event", "click_login")}
             className="rounded-lg bg-primary-container px-6 py-2 font-label-caps text-label-caps text-on-primary-container transition-opacity hover:opacity-80"
           >
-            Acessar
+            Entrar
           </Link>
         </div>
 
@@ -91,16 +90,29 @@ export const Navbar = () => {
         </div>
 
         <Link
-          href="https://app.anotechuva.com"
+          href="https://app.anotechuva.com/register"
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => {
-            sendGAEvent("event", "click_access");
+            sendGAEvent("event", "click_create_free_account");
             setIsOpen(false);
           }}
-          className="mt-auto rounded-lg bg-primary-container px-6 py-3 text-center font-label-caps text-label-caps text-on-primary-container"
+          className="rounded-lg bg-primary-container px-6 py-3 text-center font-label-caps text-label-caps text-on-primary-container"
         >
-          Acessar
+          Criar conta grátis
+        </Link>
+
+        <Link
+          href="https://app.anotechuva.com/login"
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => {
+            sendGAEvent("event", "click_login");
+            setIsOpen(false);
+          }}
+          className="mt-auto rounded-lg border border-outline-variant px-6 py-3 text-center font-label-caps text-label-caps text-on-surface transition-colors hover:border-primary hover:text-primary"
+        >
+          Entrar
         </Link>
       </aside>
     </header>

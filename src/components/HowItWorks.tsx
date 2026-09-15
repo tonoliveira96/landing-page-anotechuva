@@ -29,7 +29,7 @@ export const HowItWorks = () => {
             <HiChartBar className="text-[40px] text-primary" aria-hidden="true" />
           </div>
           <h3 className="mb-2 font-headline-md text-headline-md">3. Analise</h3>
-          <p className="text-on-surface-variant">Acompanhe gráficos fáceis de entender sobre o volume de chuva na sua região.</p>
+          <p className="text-on-surface-variant">Acompanhe gráficos fáceis de entender sobre o volume de chuva na sua propriedade.</p>
         </div>
       </div>
     </section>

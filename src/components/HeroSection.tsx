@@ -8,22 +8,23 @@ export const HeroSection = () => {
     <section className="mx-auto flex max-w-container-max-width flex-col items-center gap-12 px-gutter py-section-padding-mobile md:flex-row md:py-section-padding-desktop">
       <div className="flex-1 text-center md:text-left">
         <h1 className="mb-6 font-display-lg-mobile text-display-lg-mobile leading-tight md:font-display-lg md:text-display-lg">
-          Monitore a chuva na sua região de forma simples
+          Transforme suas medições de chuva em um histórico completo
         </h1>
 
         <p className="mx-auto mb-10 max-w-xl font-body-lg text-body-lg text-on-surface-variant md:mx-0">
-          Uma ferramenta pensada para todos que querem cuidar da nossa
-          comunidade registrando o clima local com facilidade.
+          Continue usando seu pluviômetro ou copo medidor. O AnoteChuva organiza
+          cada registro em gráficos diários, mensais e anuais para você
+          acompanhar o que caiu na sua propriedade.
         </p>
 
         <div className="flex flex-col justify-center gap-4 sm:flex-row md:justify-start">
           <Link
-            href="https://app.anotechuva.com"
+            href="https://app.anotechuva.com/register"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-xl bg-primary-container px-10 py-4 font-headline-md text-headline-md text-on-primary-container shadow-[0px_4px_20px_rgba(56,189,248,0.3)] transition-transform hover:scale-105"
           >
-            Começar agora
+            Criar conta grátis
           </Link>
 
           <a
