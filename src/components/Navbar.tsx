@@ -45,7 +45,7 @@ export const Navbar = () => {
 
         <button
           type="button"
-          className="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-outline-variant text-primary md:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-outline text-primary md:hidden"
           onClick={() => setIsOpen((prev) => !prev)}
           aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
           aria-expanded={isOpen}
@@ -68,7 +68,7 @@ export const Navbar = () => {
           <span className="text-xl font-bold text-primary">Menu</span>
           <button
             type="button"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-outline-variant text-primary"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-outline text-primary"
             onClick={() => setIsOpen(false)}
             aria-label="Fechar menu"
           >
@@ -82,7 +82,7 @@ export const Navbar = () => {
               key={link.label}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="rounded-lg border border-outline-variant px-4 py-3 font-label-caps text-label-caps text-on-surface transition-colors hover:border-primary hover:text-primary"
+              className="rounded-lg border border-outline px-4 py-3 font-label-caps text-label-caps text-on-surface transition-colors hover:border-primary hover:text-primary"
             >
               {link.label}
             </a>
@@ -110,7 +110,7 @@ export const Navbar = () => {
             sendGAEvent("event", "click_login");
             setIsOpen(false);
           }}
-          className="mt-auto rounded-lg border border-outline-variant px-6 py-3 text-center font-label-caps text-label-caps text-on-surface transition-colors hover:border-primary hover:text-primary"
+          className="mt-auto rounded-lg border border-outline px-6 py-3 text-center font-label-caps text-label-caps text-on-surface transition-colors hover:border-primary hover:text-primary"
         >
           Entrar
         </Link>
