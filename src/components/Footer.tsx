@@ -2,6 +2,7 @@
 
 const FOOTER_LINKS = [
   { href: "/privacy", label: "Privacidade" },
+  { href: "/data-deletion-instruction", label: "Excluir meus dados" },
 ];
 
 export const Footer = () => {

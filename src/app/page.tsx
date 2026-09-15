@@ -4,6 +4,7 @@ import { FriendlyTip } from "@/components/FriendlyTip";
 import { HeroSection } from "@/components/HeroSection";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Navbar } from "@/components/Navbar";
+import { PlansSection } from "@/components/PlansSection";
 import { RainBackground } from "@/components/RainBackground";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         <HeroSection />
         <FriendlyTip />
         <HowItWorks />
+        <PlansSection />
         <FinalCTA />
       </main>
 

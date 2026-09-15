@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Instrução de exclusão de dados",
-  description: "Saiba como solicitar a exclusão dos seus dados vinculados ao AnoteChuva no Facebook.",
+  description: "Saiba como excluir permanentemente sua conta e seus dados no AnoteChuva.",
 };
 
 const DataDeletionInstruction = () => {
@@ -15,21 +15,21 @@ const DataDeletionInstruction = () => {
         <h1 className='mb-4 text-2xl font-bold text-primary'>Instruções de exclusão de dados</h1>
 
         <div className='space-y-3 text-justify text-on-surface-variant'>
-          <h2 className='mb-2 text-xl font-bold text-on-surface'>Instrução de exclusão de dados do Facebook</h2>
+          <h2 className='mb-2 text-xl font-bold text-on-surface'>Como excluir sua conta e seus dados</h2>
           <p>
-            AnoteChuva®️ é uma aplicação de login no Facebook e não guardamos os seus dados pessoais no nosso servidor.
-            De acordo com a política do Facebook, devemos fornecer o URL do lembrete de exclusão de dados do usuário ou o URL da instrução de exclusão de dados.
+            O AnoteChuva®️ guarda apenas os dados que você mesmo registra: seu e-mail de cadastro, as localizações que você
+            adiciona e as medições de chuva que você anota. Você pode excluir permanentemente sua conta e todos esses dados
+            a qualquer momento, diretamente pelo aplicativo.
           </p>
           <p>
-            Se deseja apagar as suas atividades para a aplicação AnoteChuva®️, pode apagar as suas informações seguindo estes passos:
+            Para isso:
           </p>{' '}
           <div className='pl-8'>
             <ol className='list-decimal'>
-              <li>Vá para as configurações da sua conta do Facebook e privacidade. Clique em &quot;Configurações&quot;.</li>
-              <li>Procure por &quot;Aplicativos e sites&quot; e você verá todos os aplicativos e sites que você vinculou ao seu Facebook.</li>
-              <li>Procure e clique em &quot;AnoteChuva&quot; na barra de pesquisa.</li>
-              <li>Role para baixo e clique em &quot;Delete&quot;.</li>
-              <li>Parabéns, você removeu com sucesso as atividades da sua inscrição.</li>
+              <li>Acesse sua conta em app.anotechuva.com.</li>
+              <li>Vá até as configurações da sua conta.</li>
+              <li>Selecione a opção de excluir conta e confirme a exclusão.</li>
+              <li>Seus dados de perfil, localizações e registros de chuva são removidos permanentemente do nosso servidor.</li>
             </ol>
           </div>
         </div>
