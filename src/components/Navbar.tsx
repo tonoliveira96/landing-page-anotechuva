@@ -6,7 +6,7 @@ import { useState } from "react";
 import { HiBars3, HiXMark } from "react-icons/hi2";
 
 const NAV_LINKS = [
-  { href: "#how-it-works", label: "Como funciona" },
+  { href: "#como-funciona", label: "Como funciona" },
 ];
 
 export const Navbar = () => {

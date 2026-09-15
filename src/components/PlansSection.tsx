@@ -2,7 +2,7 @@ import Link from "next/link";
 import { HiCheck, HiClock } from "react-icons/hi2";
 
 const FREE_FEATURES = [
-  "Até 3 localizações cadastradas",
+  "1 localização cadastrada",
   "Até 100 registros de chuva por mês",
   "Histórico com gráficos diários, mensais e anuais",
 ];
@@ -16,7 +16,7 @@ const PREMIUM_FEATURES = [
 
 export const PlansSection = () => {
   return (
-    <section id="plans" className="mx-auto max-w-container-max-width px-gutter py-section-padding-mobile md:py-section-padding-desktop">
+    <section id="planos" className="mx-auto max-w-container-max-width px-gutter py-section-padding-mobile md:py-section-padding-desktop">
       <div className="mb-16 text-center">
         <h2 className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg">
           Comece grátis, cresça quando precisar

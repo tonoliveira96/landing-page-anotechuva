@@ -28,7 +28,7 @@ export const HeroSection = () => {
           </Link>
 
           <a
-            href="#how-it-works"
+            href="#como-funciona"
             className="rounded-xl border border-primary px-10 py-4 font-headline-md text-headline-md text-primary transition-colors hover:bg-primary/10"
           >
             Saber mais
