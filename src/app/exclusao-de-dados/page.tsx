@@ -1,10 +1,20 @@
-﻿import { Footer } from '@/components/Footer';
+import { Footer } from '@/components/Footer';
 import { Navbar } from '@/components/Navbar';
+import { readMarkdownContent } from '@/lib/markdown';
 import { Metadata } from 'next';
+import ReactMarkdown, { Components } from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+
+const { data, content } = readMarkdownContent('exclusao-de-dados');
 
 export const metadata: Metadata = {
-  title: "Instrução de exclusão de dados",
-  description: "Saiba como excluir permanentemente sua conta e seus dados no AnoteChuva.",
+  title: data.title,
+  description: data.description,
+};
+
+const markdownComponents: Components = {
+  h2: ({ node: _node, ...props }) => <h2 className='mb-2 text-xl font-bold text-on-surface' {...props} />,
+  ol: ({ node: _node, ...props }) => <ol className='list-decimal pl-8' {...props} />,
 };
 
 const DataDeletionInstruction = () => {
@@ -12,26 +22,12 @@ const DataDeletionInstruction = () => {
     <>
       <Navbar />
       <main className='mx-auto max-w-2xl px-gutter pb-12 pt-28'>
-        <h1 className='mb-4 text-2xl font-bold text-primary'>Instruções de exclusão de dados</h1>
+        <h1 className='mb-4 text-2xl font-bold text-primary'>{data.heading}</h1>
 
         <div className='space-y-3 text-justify text-on-surface-variant'>
-          <h2 className='mb-2 text-xl font-bold text-on-surface'>Como excluir sua conta e seus dados</h2>
-          <p>
-            O AnoteChuva®️ guarda apenas os dados que você mesmo registra: seu e-mail de cadastro, as localizações que você
-            adiciona e as medições de chuva que você anota. Você pode excluir permanentemente sua conta e todos esses dados
-            a qualquer momento, diretamente pelo aplicativo.
-          </p>
-          <p>
-            Para isso:
-          </p>{' '}
-          <div className='pl-8'>
-            <ol className='list-decimal'>
-              <li>Acesse sua conta em app.anotechuva.com.</li>
-              <li>Vá até as configurações da sua conta.</li>
-              <li>Selecione a opção de excluir conta e confirme a exclusão.</li>
-              <li>Seus dados de perfil, localizações e registros de chuva são removidos permanentemente do nosso servidor.</li>
-            </ol>
-          </div>
+          <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
+            {content}
+          </ReactMarkdown>
         </div>
       </main>
       <Footer />
