@@ -25,6 +25,7 @@ export const HeroSection = () => {
             className="rounded-xl bg-primary-container px-10 py-4 font-headline-md text-headline-md text-on-primary-container shadow-[0px_4px_20px_rgba(56,189,248,0.3)] transition-transform hover:scale-105"
           >
             Criar conta grátis
+            <span className="sr-only"> (abre em nova aba)</span>
           </Link>
 
           <a

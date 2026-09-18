@@ -64,6 +64,14 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "AnoteChuva",
+  url: "https://anotechuva.com",
+  logo: "https://anotechuva.com/favicon.png",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -72,6 +80,16 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${hankenGrotesk.variable} antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-primary-container focus:px-4 focus:py-2 focus:font-label-caps focus:text-label-caps focus:text-on-primary-container"
+        >
+          Pular para o conteúdo principal
+        </a>
         {children}
         <GoogleAnalytics gaId="G-F2C877LSW2" />
       </body>

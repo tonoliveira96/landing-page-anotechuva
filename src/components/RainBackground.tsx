@@ -10,6 +10,14 @@ export const RainBackground = () => {
       return;
     }
 
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    if (prefersReducedMotion) {
+      return;
+    }
+
     const dropCount = 30;
 
     for (let i = 0; i < dropCount; i += 1) {

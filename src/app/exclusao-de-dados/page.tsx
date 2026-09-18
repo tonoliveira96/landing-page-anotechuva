@@ -21,7 +21,7 @@ const DataDeletionInstruction = () => {
   return (
     <>
       <Navbar />
-      <main className='mx-auto max-w-2xl px-gutter pb-12 pt-28'>
+      <main id='main-content' className='mx-auto max-w-2xl px-gutter pb-12 pt-28'>
         <h1 className='mb-4 text-2xl font-bold text-primary'>{data.heading}</h1>
 
         <div className='space-y-3 text-justify text-on-surface-variant'>

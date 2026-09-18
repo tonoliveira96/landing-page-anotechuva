@@ -36,6 +36,13 @@ body {
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .rain-drop {
+    animation: none;
+    display: none;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

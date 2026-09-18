@@ -6,25 +6,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: `${baseUrl}/`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-09-15"),
       changeFrequency: "weekly",
       priority: 1,
     },
     {
       url: `${baseUrl}/privacidade`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-09-17"),
       changeFrequency: "yearly",
       priority: 0.7,
     },
     {
       url: `${baseUrl}/termos-de-uso`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-09-17"),
       changeFrequency: "yearly",
       priority: 0.7,
     },
     {
       url: `${baseUrl}/exclusao-de-dados`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-09-17"),
       changeFrequency: "yearly",
       priority: 0.6,
     },

@@ -79,20 +79,20 @@ const config: Config = {
       },
       fontSize: {
         "label-caps": [
-          "14px",
-          { lineHeight: "20px", letterSpacing: "0.05em", fontWeight: "600" },
+          "0.875rem",
+          { lineHeight: "1.25rem", letterSpacing: "0.05em", fontWeight: "600" },
         ],
-        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+        "body-md": ["1rem", { lineHeight: "1.5rem", fontWeight: "400" }],
         "display-lg-mobile": [
-          "32px",
-          { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "700" },
+          "2rem",
+          { lineHeight: "2.5rem", letterSpacing: "-0.01em", fontWeight: "700" },
         ],
-        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+        "body-lg": ["1.125rem", { lineHeight: "1.75rem", fontWeight: "400" }],
         "display-lg": [
-          "48px",
-          { lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "700" },
+          "3rem",
+          { lineHeight: "3.5rem", letterSpacing: "-0.02em", fontWeight: "700" },
         ],
-        "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+        "headline-md": ["1.5rem", { lineHeight: "2rem", fontWeight: "600" }],
       },
       keyframes: {},
       animation: {}

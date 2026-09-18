@@ -40,6 +40,7 @@ export const Navbar = () => {
             className="rounded-lg bg-primary-container px-6 py-2 font-label-caps text-label-caps text-on-primary-container transition-opacity hover:opacity-80"
           >
             Entrar
+            <span className="sr-only"> (abre em nova aba)</span>
           </Link>
         </div>
 
@@ -63,6 +64,7 @@ export const Navbar = () => {
       <aside
         className={`fixed right-0 top-0 z-50 flex h-screen w-72 flex-col gap-6 bg-surface-container p-6 shadow-2xl transition-transform md:hidden ${isOpen ? "translate-x-0" : "translate-x-full"}`}
         aria-label="Menu móvel"
+        aria-hidden={!isOpen}
       >
         <div className="flex items-center justify-between">
           <span className="text-xl font-bold text-primary">Menu</span>
@@ -71,6 +73,7 @@ export const Navbar = () => {
             className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-outline text-primary"
             onClick={() => setIsOpen(false)}
             aria-label="Fechar menu"
+            tabIndex={isOpen ? 0 : -1}
           >
             <HiXMark size={24} />
           </button>
@@ -83,6 +86,7 @@ export const Navbar = () => {
               href={link.href}
               onClick={() => setIsOpen(false)}
               className="rounded-lg border border-outline px-4 py-3 font-label-caps text-label-caps text-on-surface transition-colors hover:border-primary hover:text-primary"
+              tabIndex={isOpen ? 0 : -1}
             >
               {link.label}
             </a>
@@ -98,8 +102,10 @@ export const Navbar = () => {
             setIsOpen(false);
           }}
           className="rounded-lg bg-primary-container px-6 py-3 text-center font-label-caps text-label-caps text-on-primary-container"
+          tabIndex={isOpen ? 0 : -1}
         >
           Criar conta grátis
+          <span className="sr-only"> (abre em nova aba)</span>
         </Link>
 
         <Link
@@ -111,8 +117,10 @@ export const Navbar = () => {
             setIsOpen(false);
           }}
           className="mt-auto rounded-lg border border-outline px-6 py-3 text-center font-label-caps text-label-caps text-on-surface transition-colors hover:border-primary hover:text-primary"
+          tabIndex={isOpen ? 0 : -1}
         >
           Entrar
+          <span className="sr-only"> (abre em nova aba)</span>
         </Link>
       </aside>
     </header>

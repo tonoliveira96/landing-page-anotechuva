@@ -44,6 +44,7 @@ export const PlansSection = () => {
             className="rounded-xl bg-primary-container px-6 py-3 text-center font-headline-md text-headline-md text-on-primary-container transition-transform hover:scale-105"
           >
             Criar conta grátis
+            <span className="sr-only"> (abre em nova aba)</span>
           </Link>
         </div>
 

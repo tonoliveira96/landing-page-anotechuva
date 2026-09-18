@@ -37,7 +37,7 @@ const Terms = () => {
   return (
     <>
       <Navbar />
-      <main className='mx-auto max-w-3xl px-gutter pb-16 pt-28'>
+      <main id='main-content' className='mx-auto max-w-3xl px-gutter pb-16 pt-28'>
         <h1 className='mb-3 text-3xl font-bold text-primary'>{data.title}</h1>
         <p className='mb-8 text-on-surface-variant'>{data.intro}</p>
 

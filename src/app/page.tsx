@@ -7,13 +7,33 @@ import { Navbar } from "@/components/Navbar";
 import { PlansSection } from "@/components/PlansSection";
 import { RainBackground } from "@/components/RainBackground";
 
+const webApplicationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "AnoteChuva",
+  url: "https://anotechuva.com",
+  description:
+    "Aplicação gratuita para registrar medições de chuva e acompanhar gráficos diários, mensais e anuais em qualquer dispositivo.",
+  applicationCategory: "UtilitiesApplication",
+  operatingSystem: "Web",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "BRL",
+  },
+};
+
 export default function Home() {
   return (
     <div className="bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webApplicationJsonLd) }}
+      />
       <RainBackground />
       <Navbar />
 
-      <main className="relative z-10 pt-24">
+      <main id="main-content" className="relative z-10 pt-24">
         <HeroSection />
         <FriendlyTip />
         <HowItWorks />
