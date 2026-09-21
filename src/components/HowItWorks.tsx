@@ -4,7 +4,7 @@ export const HowItWorks = () => {
   return (
     <section id="como-funciona" className="mx-auto max-w-container-max-width px-gutter py-section-padding-mobile md:py-section-padding-desktop">
       <div className="mb-16 text-center">
-        <h2 className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg">Como funciona</h2>
+        <h2 className="font-section-title-mobile text-section-title-mobile md:font-section-title md:text-section-title">Como funciona</h2>
       </div>
 
       <div className="flex flex-col justify-between gap-12 md:flex-row">

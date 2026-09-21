@@ -13,7 +13,9 @@ export const metadata: Metadata = {
 };
 
 const markdownComponents: Components = {
-  h2: ({ node: _node, ...props }) => <h2 className='mb-2 text-xl font-bold text-on-surface' {...props} />,
+  h2: ({ node: _node, ...props }) => (
+    <h2 className='mb-2 font-headline-md text-headline-md text-on-surface' {...props} />
+  ),
   ol: ({ node: _node, ...props }) => <ol className='list-decimal pl-8' {...props} />,
 };
 
@@ -22,7 +24,9 @@ const DataDeletionInstruction = () => {
     <>
       <Navbar />
       <main id='main-content' className='mx-auto max-w-2xl px-gutter pb-12 pt-28'>
-        <h1 className='mb-4 text-2xl font-bold text-primary'>{data.heading}</h1>
+        <h1 className='mb-4 font-section-title-mobile text-section-title-mobile text-primary md:font-section-title md:text-section-title'>
+          {data.heading}
+        </h1>
 
         <div className='space-y-3 text-justify text-on-surface-variant'>
           <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>

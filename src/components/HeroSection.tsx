@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import HeroPlaceholder from "../assets/banner01.png";
+import HeroBanner from "../assets/banner02.png";
 
 export const HeroSection = () => {
   return (
@@ -37,12 +37,12 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      <div className="w-full max-w-[400px] flex-1">
+      <div className="w-full max-w-[440px] md:max-w-[560px] md:flex-none">
         <div className="group relative">
           <div className="absolute -inset-4 rounded-full bg-primary/20 blur-3xl transition-all group-hover:bg-primary/30" />
           <Image
-            src={HeroPlaceholder}
-            alt="Ilustração de pessoa registrando chuva em um painel digital"
+            src={HeroBanner}
+            alt="Painel do AnoteChuva mostrando gráficos de chuva por dia, por mês e comparativo anual"
             className="relative z-10 h-auto w-full rounded-2xl object-cover drop-shadow-2xl"
             priority
           />

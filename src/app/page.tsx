@@ -16,11 +16,20 @@ const webApplicationJsonLd = {
     "Aplicação gratuita para registrar medições de chuva e acompanhar gráficos diários, mensais e anuais em qualquer dispositivo.",
   applicationCategory: "UtilitiesApplication",
   operatingSystem: "Web",
-  offers: {
-    "@type": "Offer",
-    price: "0",
-    priceCurrency: "BRL",
-  },
+  offers: [
+    {
+      "@type": "Offer",
+      name: "Gratuito",
+      price: "0",
+      priceCurrency: "BRL",
+    },
+    {
+      "@type": "Offer",
+      name: "Premium",
+      price: "19.90",
+      priceCurrency: "BRL",
+    },
+  ],
 };
 
 export default function Home() {

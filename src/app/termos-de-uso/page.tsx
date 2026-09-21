@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const markdownComponents: Components = {
   h2: ({ node: _node, ...props }) => (
-    <h2 className='mb-2 mt-8 text-xl font-semibold text-on-surface first:mt-0' {...props} />
+    <h2 className='mb-2 mt-8 font-headline-md text-headline-md text-on-surface first:mt-0' {...props} />
   ),
   p: ({ node: _node, ...props }) => <p className='mb-2 last:mb-0' {...props} />,
   ul: ({ node: _node, ...props }) => <ul className='mb-2 list-disc space-y-1 pl-6 last:mb-0' {...props} />,
@@ -38,7 +38,9 @@ const Terms = () => {
     <>
       <Navbar />
       <main id='main-content' className='mx-auto max-w-3xl px-gutter pb-16 pt-28'>
-        <h1 className='mb-3 text-3xl font-bold text-primary'>{data.title}</h1>
+        <h1 className='mb-3 font-section-title-mobile text-section-title-mobile text-primary md:font-section-title md:text-section-title'>
+          {data.title}
+        </h1>
         <p className='mb-8 text-on-surface-variant'>{data.intro}</p>
 
         <article className='text-on-surface-variant'>

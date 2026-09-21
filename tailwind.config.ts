@@ -76,6 +76,9 @@ const config: Config = {
         "body-lg": ["var(--font-hanken-grotesk)", "sans-serif"],
         "display-lg": ["var(--font-hanken-grotesk)", "sans-serif"],
         "headline-md": ["var(--font-hanken-grotesk)", "sans-serif"],
+        "section-title-mobile": ["var(--font-hanken-grotesk)", "sans-serif"],
+        "section-title": ["var(--font-hanken-grotesk)", "sans-serif"],
+        caption: ["var(--font-hanken-grotesk)", "sans-serif"],
       },
       fontSize: {
         "label-caps": [
@@ -93,6 +96,18 @@ const config: Config = {
           { lineHeight: "3.5rem", letterSpacing: "-0.02em", fontWeight: "700" },
         ],
         "headline-md": ["1.5rem", { lineHeight: "2rem", fontWeight: "600" }],
+        // Degrau entre headline-md (24px) e display-lg (48px) — títulos de
+        // seção (<h2>), que não podem ter o mesmo peso visual do <h1> do Hero.
+        "section-title-mobile": [
+          "1.75rem",
+          { lineHeight: "2.25rem", letterSpacing: "-0.005em", fontWeight: "700" },
+        ],
+        "section-title": [
+          "2.25rem",
+          { lineHeight: "2.75rem", letterSpacing: "-0.01em", fontWeight: "700" },
+        ],
+        // Legendas/fine print (badges, disclaimers) — antes usavam text-xs cru.
+        caption: ["0.75rem", { lineHeight: "1rem", letterSpacing: "0.02em", fontWeight: "500" }],
       },
       keyframes: {},
       animation: {}
