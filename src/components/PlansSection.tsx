@@ -26,8 +26,8 @@ export const PlansSection = () => {
         </h2>
       </div>
 
-      <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-3">
-        <div className="flex flex-col rounded-2xl border border-primary bg-surface-container p-8">
+      <div className="mx-auto max-w-5xl overflow-hidden rounded-lg border border-outline-variant md:grid md:grid-cols-3">
+        <div className="flex flex-col gap-1 border-b border-t-2 border-outline-variant border-t-transparent p-8 md:border-b-0 md:border-r">
           <h3 className="mb-1 font-headline-md text-headline-md">Free</h3>
           <p className="mb-6 text-on-surface-variant">Para quem está começando a acompanhar a chuva.</p>
 
@@ -44,18 +44,24 @@ export const PlansSection = () => {
             href="https://app.anotechuva.com/register"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-xl bg-primary-container px-6 py-3 text-center font-headline-md text-headline-md text-on-primary-container transition-transform hover:scale-105"
+            className="rounded-xl bg-primary-container px-6 py-3 text-center font-headline-md text-headline-md text-on-primary-container transition-colors hover:bg-primary"
           >
             Criar conta grátis
             <span className="sr-only"> (abre em nova aba)</span>
           </Link>
         </div>
 
-        <div className="flex flex-col rounded-2xl border border-primary bg-surface-container p-8">
-          <h3 className="mb-1 font-headline-md text-headline-md">Premium</h3>
+        <div className="flex flex-col gap-1 border-b border-t-2 border-outline-variant border-t-primary bg-surface-container p-8 md:border-b-0 md:border-r">
+          <div className="mb-1 flex items-center gap-3">
+            <h3 className="font-headline-md text-headline-md">Premium</h3>
+            <span className="rounded-full border border-primary/40 px-3 py-1 font-caption text-caption text-primary">
+              Mais popular
+            </span>
+          </div>
           <p className="mb-1 text-on-surface-variant">Para quem acompanha mais de um lugar, com mais frequência.</p>
-          <p className="mb-6 font-section-title text-section-title text-primary">
-            R$19,90<span className="font-body-md text-body-md text-on-surface-variant">/mês</span>
+          <p className="mb-6 text-section-title text-primary">
+            <span className="font-mono">R$19,90</span>
+            <span className="font-body-md text-body-md text-on-surface-variant">/mês</span>
           </p>
 
           <ul className="mb-4 flex flex-1 flex-col gap-3">
@@ -68,7 +74,7 @@ export const PlansSection = () => {
           </ul>
 
           <p className="mb-1 font-caption text-caption text-on-surface-variant">
-            ou R$191,04/ano à vista (20% de desconto)
+            ou <span className="font-mono">R$191,04</span>/ano à vista (20% de desconto)
           </p>
           <p className="mb-6 font-caption text-caption text-on-surface-variant">
             O dispositivo de medição (sensor) não está incluso — é adquirido separadamente.
@@ -78,14 +84,14 @@ export const PlansSection = () => {
             href="https://app.anotechuva.com/register"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-xl bg-primary-container px-6 py-3 text-center font-headline-md text-headline-md text-on-primary-container transition-transform hover:scale-105"
+            className="rounded-xl bg-primary-container px-6 py-3 text-center font-headline-md text-headline-md text-on-primary-container transition-colors hover:bg-primary"
           >
             Criar conta e assinar
             <span className="sr-only"> (abre em nova aba)</span>
           </Link>
         </div>
 
-        <div className="flex flex-col rounded-2xl border border-outline-variant bg-surface-container p-8">
+        <div className="flex flex-col gap-1 border-t-2 border-outline-variant border-t-transparent p-8">
           <div className="mb-1 flex items-center gap-3">
             <h3 className="font-headline-md text-headline-md">Corporativo</h3>
             <span className="flex items-center gap-1 rounded-full border border-outline-variant px-3 py-1 font-caption text-caption text-on-surface-variant">

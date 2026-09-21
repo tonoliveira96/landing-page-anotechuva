@@ -12,7 +12,9 @@ export const HowItWorks = () => {
           <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 transition-transform group-hover:scale-110">
             <HiUserPlus className="text-[40px] text-primary" aria-hidden="true" />
           </div>
-          <h3 className="mb-2 font-headline-md text-headline-md">1. Registre-se</h3>
+          <h3 className="mb-2 font-headline-md text-headline-md">
+            <span className="font-mono text-primary">1.</span> Registre-se
+          </h3>
           <p className="text-on-surface-variant">Crie sua conta em segundos apenas com seu e-mail ou telefone.</p>
         </div>
 
@@ -20,7 +22,9 @@ export const HowItWorks = () => {
           <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 transition-transform group-hover:scale-110">
             <HiPencilSquare className="text-[40px] text-primary" aria-hidden="true" />
           </div>
-          <h3 className="mb-2 font-headline-md text-headline-md">2. Anote a chuva</h3>
+          <h3 className="mb-2 font-headline-md text-headline-md">
+            <span className="font-mono text-primary">2.</span> Anote a chuva
+          </h3>
           <p className="text-on-surface-variant">Depois de chover, basta olhar seu medidor e digitar o valor no sistema.</p>
         </div>
 
@@ -28,7 +32,9 @@ export const HowItWorks = () => {
           <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 transition-transform group-hover:scale-110">
             <HiChartBar className="text-[40px] text-primary" aria-hidden="true" />
           </div>
-          <h3 className="mb-2 font-headline-md text-headline-md">3. Analise</h3>
+          <h3 className="mb-2 font-headline-md text-headline-md">
+            <span className="font-mono text-primary">3.</span> Analise
+          </h3>
           <p className="text-on-surface-variant">Acompanhe gráficos fáceis de entender sobre o volume de chuva na sua propriedade.</p>
         </div>
       </div>

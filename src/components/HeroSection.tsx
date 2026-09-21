@@ -22,7 +22,7 @@ export const HeroSection = () => {
             href="https://app.anotechuva.com/register"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-xl bg-primary-container px-10 py-4 font-headline-md text-headline-md text-on-primary-container shadow-[0px_4px_20px_rgba(56,189,248,0.3)] transition-transform hover:scale-105"
+            className="rounded-xl bg-primary-container px-10 py-4 font-headline-md text-headline-md text-on-primary-container transition-colors hover:bg-primary"
           >
             Criar conta grátis
             <span className="sr-only"> (abre em nova aba)</span>
@@ -38,12 +38,12 @@ export const HeroSection = () => {
       </div>
 
       <div className="w-full max-w-[440px] md:max-w-[560px] md:flex-none">
-        <div className="group relative">
-          <div className="absolute -inset-4 rounded-full bg-primary/20 blur-3xl transition-all group-hover:bg-primary/30" />
+        <div className="relative">
+          <div className="absolute -inset-3 rounded-lg border border-outline-variant" aria-hidden="true" />
           <Image
             src={HeroBanner}
             alt="Painel do AnoteChuva mostrando gráficos de chuva por dia, por mês e comparativo anual"
-            className="relative z-10 h-auto w-full rounded-2xl object-cover drop-shadow-2xl"
+            className="relative rounded-lg"
             priority
           />
         </div>

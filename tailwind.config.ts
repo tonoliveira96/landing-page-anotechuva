@@ -8,53 +8,23 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      // Paleta deliberada (não mais o dicionário Material Theme Builder
+      // inteiro) — só os papéis realmente usados no site. água = acento
+      // primário (chuva/dado); ocre = acento secundário (atenção/pendência).
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        primary: "var(--primary)",
-        "tertiary-fixed": "#d8e3fb",
-        "surface-dim": "#101415",
-        "on-primary-container": "#004965",
-        surface: "#101415",
-        "on-surface": "#e0e3e5",
-        "outline-variant": "#3e484f",
-        "secondary-container": "#00a2e6",
-        "surface-container-highest": "#323537",
-        "on-surface-variant": "#bdc8d1",
-        "on-background": "#e0e3e5",
-        "error-container": "#93000a",
-        tertiary: "#c2cde5",
-        "on-secondary": "#00344d",
+        background: "var(--background)", // céu encoberto
+        foreground: "var(--foreground)", // tinta
+        primary: "var(--primary)", // água
+        "primary-container": "#8ed5ff", // água clara — fundo de botão preenchido
+        "on-primary-container": "#003c57",
+        "on-background": "#e4e7e8",
+        "on-surface": "#e4e7e8",
+        "on-surface-variant": "#b9c4cc",
         outline: "#87929a",
-        "primary-fixed-dim": "#7bd0ff",
-        secondary: "#89ceff",
-        "tertiary-container": "#a7b2c9",
-        "on-tertiary-fixed": "#111c2d",
-        "inverse-surface": "#e0e3e5",
-        "on-tertiary-container": "#394458",
-        error: "#ffb4ab",
-        "inverse-on-surface": "#2d3133",
-        "surface-tint": "#7bd0ff",
-        "on-secondary-fixed-variant": "#004c6e",
-        "on-secondary-container": "#00344e",
+        "outline-variant": "#2a3033", // fio/hairline
+        "surface-container": "#1a1e20",
         "surface-container-lowest": "#0b0f10",
-        "on-tertiary": "#263143",
-        "primary-container": "#38bdf8",
-        "on-error": "#690005",
-        "on-primary-fixed-variant": "#004c69",
-        "secondary-fixed-dim": "#89ceff",
-        "on-error-container": "#ffdad6",
-        "tertiary-fixed-dim": "#bcc7de",
-        "primary-fixed": "#c4e7ff",
-        "surface-container-high": "#272a2c",
-        "on-tertiary-fixed-variant": "#3c475a",
-        "surface-bright": "#363a3b",
-        "surface-container": "#1d2022",
-        "surface-container-low": "#191c1e",
-        "inverse-primary": "#00668a",
-        "on-primary": "#00354a",
-        "secondary-fixed": "#c9e6ff",
-        "surface-variant": "#323537"
+        ocre: "#c9963a", // seco/atenção
       },
       borderRadius: {
         DEFAULT: "0.25rem",
@@ -70,15 +40,19 @@ const config: Config = {
         base: "8px",
       },
       fontFamily: {
-        "label-caps": ["var(--font-hanken-grotesk)", "sans-serif"],
-        "body-md": ["var(--font-hanken-grotesk)", "sans-serif"],
-        "display-lg-mobile": ["var(--font-hanken-grotesk)", "sans-serif"],
-        "body-lg": ["var(--font-hanken-grotesk)", "sans-serif"],
-        "display-lg": ["var(--font-hanken-grotesk)", "sans-serif"],
-        "headline-md": ["var(--font-hanken-grotesk)", "sans-serif"],
-        "section-title-mobile": ["var(--font-hanken-grotesk)", "sans-serif"],
-        "section-title": ["var(--font-hanken-grotesk)", "sans-serif"],
-        caption: ["var(--font-hanken-grotesk)", "sans-serif"],
+        sans: ["var(--font-sans)", "sans-serif"],
+        // Só pra número: preço, mm, %, data — o conteúdo que o produto
+        // realmente mede. Ver PlansSection (preço) e HowItWorks (passos).
+        mono: ["var(--font-mono)", "monospace"],
+        "label-caps": ["var(--font-sans)", "sans-serif"],
+        "body-md": ["var(--font-sans)", "sans-serif"],
+        "display-lg-mobile": ["var(--font-sans)", "sans-serif"],
+        "body-lg": ["var(--font-sans)", "sans-serif"],
+        "display-lg": ["var(--font-sans)", "sans-serif"],
+        "headline-md": ["var(--font-sans)", "sans-serif"],
+        "section-title-mobile": ["var(--font-sans)", "sans-serif"],
+        "section-title": ["var(--font-sans)", "sans-serif"],
+        caption: ["var(--font-sans)", "sans-serif"],
       },
       fontSize: {
         "label-caps": [

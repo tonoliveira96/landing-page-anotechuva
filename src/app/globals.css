@@ -4,21 +4,15 @@
 
 :root {
   --background: #101415;
-  --foreground: #e0e3e5;
-  --primary: #8ed5ff;
+  --foreground: #e4e7e8;
+  --primary: #38bdf8;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-hanken-grotesk), sans-serif;
+  font-family: var(--font-sans), sans-serif;
   overflow-x: hidden;
-}
-
-.glass-card {
-  background: rgba(30, 41, 59, 0.4);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(51, 65, 85, 0.5);
 }
 
 .rain-drop {
