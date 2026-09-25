@@ -8,6 +8,7 @@ import { HiBars3, HiXMark } from "react-icons/hi2";
 const NAV_LINKS = [
   { href: "#como-funciona", label: "Como funciona" },
   { href: "#planos", label: "Planos" },
+  { href: "#perguntas", label: "Dúvidas" },
 ];
 
 export const Navbar = () => {

@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { HiCheck, HiClock } from "react-icons/hi2";
 
-const FREE_FEATURES = ["1 localização", "Registro manual de chuva"];
+const FREE_FEATURES = ["1 localização", "Registro manual de chuva", "Gráficos básicos (diário, mensal e anual)"];
 
 const PREMIUM_FEATURES = [
+  "Tudo do Free",
   "Localizações ilimitadas",
-  "1 dispositivo automático (sensor)",
   "Histórico completo",
-  "Gráficos",
+  "Gráficos comparativos entre anos e locais",
+  "1 dispositivo automático (sensor) — em breve",
 ];
 
 const ENTERPRISE_FEATURES = [
@@ -52,16 +53,14 @@ export const PlansSection = () => {
         </div>
 
         <div className="flex flex-col gap-1 border-b border-t-2 border-outline-variant border-t-primary bg-surface-container p-8 md:border-b-0 md:border-r">
-          <div className="mb-1 flex items-center gap-3">
-            <h3 className="font-headline-md text-headline-md">Premium</h3>
-            <span className="rounded-full border border-primary/40 px-3 py-1 font-caption text-caption text-primary">
-              Mais popular
-            </span>
-          </div>
+          <h3 className="mb-1 font-headline-md text-headline-md">Premium</h3>
           <p className="mb-1 text-on-surface-variant">Para quem acompanha mais de um lugar, com mais frequência.</p>
-          <p className="mb-6 text-section-title text-primary">
+          <p className="mb-1 text-section-title text-primary">
             <span className="font-mono">R$19,90</span>
             <span className="font-body-md text-body-md text-on-surface-variant">/mês</span>
+          </p>
+          <p className="mb-6 font-caption text-caption text-on-surface-variant">
+            Pague com cartão ou Pix. Cancele quando quiser.
           </p>
 
           <ul className="mb-4 flex flex-1 flex-col gap-3">
@@ -77,7 +76,7 @@ export const PlansSection = () => {
             ou <span className="font-mono">R$191,04</span>/ano à vista (20% de desconto)
           </p>
           <p className="mb-6 font-caption text-caption text-on-surface-variant">
-            O dispositivo de medição (sensor) não está incluso — é adquirido separadamente.
+            O sensor automático ainda está em desenvolvimento. Quando lançar, ele será adquirido separadamente.
           </p>
 
           <Link

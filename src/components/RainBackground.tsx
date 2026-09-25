@@ -1,10 +1,12 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 export const RainBackground = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
-    const container = document.getElementById("rain-container");
+    const container = containerRef.current;
 
     if (!container) {
       return;
@@ -24,7 +26,7 @@ export const RainBackground = () => {
       const drop = document.createElement("div");
       drop.className = "rain-drop";
 
-      drop.style.left = `${Math.random() * window.innerWidth}px`;
+      drop.style.left = `${Math.random() * 100}%`;
       drop.style.animationDuration = `${Math.random() * 2 + 2}s`;
       drop.style.animationDelay = `${Math.random() * 5}s`;
 
@@ -36,5 +38,11 @@ export const RainBackground = () => {
     };
   }, []);
 
-  return <div id="rain-container" className="pointer-events-none fixed inset-0 z-0" aria-hidden="true" />;
+  return (
+    <div
+      ref={containerRef}
+      className="pointer-events-none absolute inset-0 z-0 overflow-hidden [mask-image:linear-gradient(to_bottom,black_70%,transparent)]"
+      aria-hidden="true"
+    />
+  );
 };

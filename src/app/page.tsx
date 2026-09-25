@@ -1,3 +1,4 @@
+import { FAQSection } from "@/components/FAQSection";
 import { FinalCTA } from "@/components/FinalCTA";
 import { Footer } from "@/components/Footer";
 import { FriendlyTip } from "@/components/FriendlyTip";
@@ -5,7 +6,6 @@ import { HeroSection } from "@/components/HeroSection";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Navbar } from "@/components/Navbar";
 import { PlansSection } from "@/components/PlansSection";
-import { RainBackground } from "@/components/RainBackground";
 
 const webApplicationJsonLd = {
   "@context": "https://schema.org",
@@ -39,7 +39,6 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webApplicationJsonLd) }}
       />
-      <RainBackground />
       <Navbar />
 
       <main id="main-content" className="relative z-10 pt-24">
@@ -47,6 +46,7 @@ export default function Home() {
         <FriendlyTip />
         <HowItWorks />
         <PlansSection />
+        <FAQSection />
         <FinalCTA />
       </main>
 

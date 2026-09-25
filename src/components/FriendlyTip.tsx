@@ -10,7 +10,10 @@ export const FriendlyTip = () => {
 
         <p className="font-body-lg text-body-lg text-on-surface-variant">
           <span className="font-bold text-ocre">Dica amigável:</span> Você não precisa de equipamentos caros. Um simples
-          copo medidor no seu quintal já é um ótimo começo para participar.
+          copo de paredes retas no seu quintal já é um ótimo começo.{" "}
+          <a href="#perguntas" className="font-medium text-primary underline underline-offset-4 hover:opacity-80">
+            Veja como medir
+          </a>
         </p>
       </div>
     </section>

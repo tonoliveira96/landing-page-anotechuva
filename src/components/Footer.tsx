@@ -2,6 +2,8 @@
 
 const FOOTER_LINKS = [
   { href: "/#planos", label: "Planos" },
+  { href: "/#perguntas", label: "Dúvidas" },
+  { href: "mailto:contato@anotechuva.com", label: "Contato" },
   { href: "/privacidade", label: "Privacidade" },
   { href: "/termos-de-uso", label: "Termos de Uso" },
   { href: "/exclusao-de-dados", label: "Excluir meus dados" },

@@ -15,7 +15,7 @@ export const HowItWorks = () => {
           <h3 className="mb-2 font-headline-md text-headline-md">
             <span className="font-mono text-primary">1.</span> Registre-se
           </h3>
-          <p className="text-on-surface-variant">Crie sua conta em segundos apenas com seu e-mail ou telefone.</p>
+          <p className="text-on-surface-variant">Crie sua conta em segundos com seu e-mail ou sua conta Google.</p>
         </div>
 
         <div className="group flex-1 text-center">
@@ -25,7 +25,7 @@ export const HowItWorks = () => {
           <h3 className="mb-2 font-headline-md text-headline-md">
             <span className="font-mono text-primary">2.</span> Anote a chuva
           </h3>
-          <p className="text-on-surface-variant">Depois de chover, basta olhar seu medidor e digitar o valor no sistema.</p>
+          <p className="text-on-surface-variant">Depois de chover, olhe seu medidor e digite quantos milímetros caíram — pelo celular ou computador.</p>
         </div>
 
         <div className="group flex-1 text-center">
